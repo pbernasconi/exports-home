@@ -1,0 +1,33 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+$code-bold-font: "/assets/fonts/CODE-bold.otf";
+$code-light-font: "/assets/fonts/CODE-light.otf";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome';
+
+@font-face {
+  font-family: 'CODE';
+  src: url("/assets/fonts/CODE-bold.otf");
+  font-weight: normal;
+  font-style: normal
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.main-page {
+  height: 100%;
+  width: 100%;
+}
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'modal/modal.scss';
+// endinjector

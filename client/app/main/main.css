@@ -1,0 +1,58 @@
+canvas {
+  display: block;
+  vertical-align: bottom;
+  opacity: 0.6
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #30426A;
+
+}
+
+.panel {
+  position: absolute;
+  z-index: 10;
+  width: 450px;
+  height: 200px;
+  background: #eee;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding: 5px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #222;
+  text-align: center;
+}
+
+.panel h1 {
+  font-size: 55px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #30426A
+}
+
+.panel h2 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.panel p {
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: 15px;
+}
