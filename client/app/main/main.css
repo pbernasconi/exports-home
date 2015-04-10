@@ -11,7 +11,7 @@ canvas {
   background-color: #30426A;
 }
 
-.panel {
+.home-panel {
   position: absolute;
   z-index: 10;
   width: 450px;
@@ -33,7 +33,7 @@ canvas {
   text-align: center;
 }
 
-.panel h1 {
+.home-panel h1 {
   font-size: 55px;
   font-weight: 900;
   text-align: center;
@@ -41,7 +41,7 @@ canvas {
   color: #30426A
 }
 
-.panel h2 {
+.home-panel h2 {
   margin-top: 20px;
   font-weight: 400;
   font-size: 30px;
@@ -50,8 +50,15 @@ canvas {
   line-height: 1.3em;
 }
 
-.panel p {
+.home-panel p {
   margin-top: 20px;
   font-weight: lighter;
   font-size: 15px;
+}
+
+
+.home-btn-login {
+  position: absolute;
+  right: 80px;
+  top: 50px;
 }
