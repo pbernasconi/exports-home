@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('exportsHomeApp')
-  .controller('LoginCtrl', function ($scope) {
+  .controller('LoginCtrl', function ($scope, Auth, $location) {
     $scope.user = {};
     $scope.errors = {};
 

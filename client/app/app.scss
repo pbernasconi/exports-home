@@ -27,8 +27,5 @@ html, body {
 
 // Component styles are injected through grunt
 // injector
-@import 'account/login/login.scss';
-@import 'admin/admin.scss';
-@import 'login/login.scss';
 @import 'modal/modal.scss';
 // endinjector
