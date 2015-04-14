@@ -6,6 +6,7 @@ angular.module('exportsHomeApp')
       .state('signup', {
         url: '/signup',
         templateUrl: 'app/signup/signup.html',
-        controller: 'SignupCtrl'
+        controller: 'SignupCtrl',
+        controllerAs: 'signup'
       })
   });

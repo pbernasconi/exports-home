@@ -1,34 +1,24 @@
 'use strict';
 
 angular.module('exportsHomeApp')
-  .controller('SignupCtrl', function ($scope, Auth, $location) {
-    $scope.user = {};
-    $scope.errors = {};
+  .controller('SignupCtrl', SignupCtrl);
 
-    $scope.register = function (form) {
-      $scope.submitted = true;
 
-      if (form.$valid) {
-        Auth.createUser({
-          name: $scope.user.name,
-          email: $scope.user.email,
-          password: $scope.user.password
-        })
-          .then(function () {
-            // Account created, redirect to home
-            $location.path('/');
-          })
-          .catch(function (err) {
-            err = err.data;
-            $scope.errors = {};
+function SignupCtrl(Auth, $location) {
+  var self = this;
+  self.user = {
+    name: 'Paolo Ber',
+    email: 'paolo.enrico.bernasconi@gmail.com',
+    company: 'ex',
+    subdomain: 'ex'
+  };
 
-            // Update validity of form fields that match the mongoose errors
-            angular.forEach(err.errors, function (error, field) {
-              form[field].$setValidity('mongoose', false);
-              $scope.errors[field] = error.message;
-            });
-          });
-      }
-    };
+  self.register = function (form) {
+    self.submitted = true;
 
-  });
+    console.log(form);
+
+
+  };
+
+}
