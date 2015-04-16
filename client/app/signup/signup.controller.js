@@ -19,6 +19,7 @@ function SignupCtrl(Auth, $location) {
     console.log(form);
 
 
+
   };
 
 }
